@@ -1,0 +1,93 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/fonts" as *;
+
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $primary-bg;
+    margin: 0 1rem;
+    padding-top: 2rem;
+
+    &__container {
+        width: 100%;
+        max-width: 23.75rem;
+        background-color: $primary-text;
+        padding: 0 1rem 1rem 1rem;
+        border-radius: 5px;
+    }
+
+
+    &__title {
+        font-size: 1.25rem;
+        text-align: center;
+        margin: 0.75rem 0;
+        text-transform: uppercase;
+        // text-decoration: underline;
+        font-family: $font-sans-serif;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__row {
+        width: 15rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.25rem 0;
+    }
+
+    &__label {
+        font-size: 1.1rem;
+    }
+
+    &__input {
+        width: 7rem;
+        padding: 0.25rem;
+    }
+
+    &__button {
+        width: 100%;
+        max-width: 240px;
+        margin-top: 0.75rem;
+        padding: 0.25rem 0;
+        background-color: $primary-cta;
+        border: 1px solid $primary-bg;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+
+    &__results {
+
+        // background-color: $primary-bg;
+        // color: $primary-text;
+        // text-align: center;
+        // // padding: 1rem;
+        // margin: 1rem 0rem;
+
+        width: 100%;
+        max-width: 23.75rem;
+        background-color: $primary-text;
+        padding: 0 1rem;
+        margin-top: 1.5rem;
+        text-align: center;
+        border-radius: 5px;
+        border: solid 3px $primary-cta;
+    }
+
+    &__heading {
+        margin: 0.75rem 0;
+        font-family: $font-sans-serif;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    &__number {
+        font-size: 1.35rem;
+    }
+}

@@ -1,0 +1,21 @@
+@use "./styles/partials/fonts" as *;
+@use "./styles/partials/colors" as *;
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-serif;
+  background-color: $primary-bg;
+  color: $primary-text;
+  width: 100%;
+  margin: 0;
+}

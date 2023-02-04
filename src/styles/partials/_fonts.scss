@@ -1,0 +1,19 @@
+$font-sans-serif: "Montserrat", sans-serif;
+$font-serif: "Playfair Display", serif;
+
+// Montserrat
+@font-face {
+    font-family: $font-sans-serif;
+    src: url("../../assets/fonts/Montserrat-Thin.woff2") format("woff2"),
+        url("../../assets/fonts/Montserrat-Thin.woff") format("woff"),
+        url("../../assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+// Playfair Display
+@font-face {
+    font-family: $font-serif;
+    src: url("../../assets/fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+        url("../../assets/fonts/PlayfairDisplay-Regular.woff") format("woff"),
+        url("../../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+
+}
