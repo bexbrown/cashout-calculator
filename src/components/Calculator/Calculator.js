@@ -14,12 +14,12 @@ function Calculator() {
         setResultsHeading("The due back is...")
         setCalculated(true);
 
-        let netSales = parseInt(event.target.netSales.value);
-        let xferIn = parseInt(event.target.xferIn.value);
-        let xferOut = parseInt(event.target.xferOut.value);
-        let chargeTips = parseInt(event.target.chargeTips.value);
-        let bankDue = parseInt(event.target.bankDue.value);
-        let sommelierFee = parseInt(event.target.sommelierFee.value);
+        let netSales = parseFloat(event.target.netSales.value);
+        let xferIn = parseFloat(event.target.xferIn.value);
+        let xferOut = parseFloat(event.target.xferOut.value);
+        let chargeTips = parseFloat(event.target.chargeTips.value);
+        let bankDue = parseFloat(event.target.bankDue.value);
+        let sommelierFee = parseFloat(event.target.sommelierFee.value);
 
         xferIn = xferIn * 0.87;
         netSales = netSales + xferIn;
@@ -42,6 +42,12 @@ function Calculator() {
             setResultsNumber("-$" + dueBack);
             // setResultsText("(You owe the house)");
         }
+
+        console.log(xferIn)
+        console.log(xferOut)
+        console.log(chargeTips)
+        console.log(bankDue)
+        console.log(sommelierFee);
     }
 
     return (
