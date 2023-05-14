@@ -21,9 +21,9 @@ function Calculator() {
         let bankDue = parseFloat(event.target.bankDue.value);
         let sommelierFee = parseFloat(event.target.sommelierFee.value);
 
-        xferIn = xferIn * 0.87;
+        xferIn = xferIn / 1.13;
         netSales = netSales + xferIn;
-        xferOut = xferOut * 0.87;
+        xferOut = xferOut / 1.13;
         netSales = netSales - xferOut;
         let tipOut = netSales * 0.075;
         let dueBack = tipOut + sommelierFee + bankDue - chargeTips;
