@@ -1,11 +1,10 @@
-// import { useEffect } from "react";
 import "./Calculator.scss";
 import { useState } from 'react';
 
 function Calculator() {
 
     const [resultsHeading, setResultsHeading] = useState("");
-    // const [resultsText, setResultsText] = useState("");
+    const [resultsText, setResultsText] = useState("");
     const [resultsNumber, setResultsNumber] = useState("");
     const [calculated, setCalculated] = useState(false);
 
@@ -29,25 +28,20 @@ function Calculator() {
         let dueBack = tipOut + sommelierFee + bankDue - chargeTips;
         dueBack = dueBack.toFixed(2);
 
-        // console.log(dueBack);
-
-        // setDueback(dueBack);
-
 
         if (dueBack >= 0) {
             setResultsNumber("$" + dueBack);
-            // setResultsText("(The house owes you)");
+            setResultsText("(The house owes you!)");
         } else {
             dueBack *= -1;
             setResultsNumber("-$" + dueBack);
-            // setResultsText("(You owe the house)");
+            setResultsText("(You owe the house!)");
         }
-
-        console.log(xferIn)
-        console.log(xferOut)
-        console.log(chargeTips)
-        console.log(bankDue)
-        console.log(sommelierFee);
+        // console.log(xferIn)
+        // console.log(xferOut)
+        // console.log(chargeTips)
+        // console.log(bankDue)
+        // console.log(sommelierFee);
     }
 
     return (
@@ -88,7 +82,7 @@ function Calculator() {
                 <div className="calculator__results">
                     <h2 className="calculator__heading">{resultsHeading}</h2>
                     <h3 className="calculator__number">{resultsNumber}</h3>
-                    {/* <h3>{resultsText}</h3> */}
+                    <h3 className="calculator__text">{resultsText}</h3>
 
                 </div>}
         </div >

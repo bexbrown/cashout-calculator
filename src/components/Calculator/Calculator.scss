@@ -18,13 +18,11 @@
         border-radius: 5px;
     }
 
-
     &__title {
         font-size: 1.25rem;
         text-align: center;
         margin: 0.75rem 0;
         text-transform: uppercase;
-        // text-decoration: underline;
         font-family: $font-sans-serif;
     }
 
@@ -64,13 +62,6 @@
     }
 
     &__results {
-
-        // background-color: $primary-bg;
-        // color: $primary-text;
-        // text-align: center;
-        // // padding: 1rem;
-        // margin: 1rem 0rem;
-
         width: 100%;
         max-width: 23.75rem;
         background-color: $primary-text;
@@ -90,5 +81,9 @@
 
     &__number {
         font-size: 1.35rem;
+    }
+
+    &__text {
+        font-size: 1rem;
     }
 }
