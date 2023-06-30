@@ -31,17 +31,18 @@ function Calculator() {
 
         if (dueBack >= 0) {
             setResultsNumber("$" + dueBack);
-            setResultsText("(The house owes you!)");
+            setResultsText("(You owe the house)");
         } else {
             dueBack *= -1;
             setResultsNumber("-$" + dueBack);
-            setResultsText("(You owe the house!)");
+            setResultsText("(The house owes you)");
         }
         // console.log(xferIn)
         // console.log(xferOut)
         // console.log(chargeTips)
         // console.log(bankDue)
         // console.log(sommelierFee);
+        console.log(resultsNumber)
     }
 
     return (
